@@ -1,8 +1,7 @@
 # image-validation-webhook
 
 A minimal [ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
-backend for the Kubernetes Security (CKS) labs. The name follows the backend of
-B. Muschko's *CKS Study Guide* (chapter 6).
+backend.
 
 The API server sends an `ImageReview` with the images of a new Pod; the backend answers
 `allowed: true` only if every image comes from an allowed registry prefix.
